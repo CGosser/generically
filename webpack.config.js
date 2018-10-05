@@ -2,7 +2,6 @@ const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const syllable = require('syllable');
 
 
 module.exports = {
@@ -19,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Haiku',
+      title: 'GENERIC',
       template: './src/index.html',
       inject: 'body'
     })
